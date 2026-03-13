@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JEAGRITECH AgriTech Platform</title>
+
+<style>
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+margin:0;
+background:#f4f6f3;
+color:#333;
+}
+
+header{
+background:#1f7a1f;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+font-size:34px;
+}
+
+nav{
+background:#145214;
+text-align:center;
+padding:12px;
+}
+
+nav a{
+color:white;
+margin:12px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:gold;
+}
+
+.hero{
+background:url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854") center/cover;
+color:white;
+text-align:center;
+padding:90px 20px;
+}
+
+.hero h2{
+font-size:42px;
+margin-bottom:10px;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:50px 20px;
+}
+
+.features{
+display:grid;
+grid-template-columns:1fr;
+gap:25px;
+}
+
+.feature{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.product{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.product img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.price{
+color:#1f7a1f;
+font-weight:bold;
+font-size:18px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+border:1px solid #ddd;
+padding:10px;
+text-align:center;
+}
+
+th{
+background:#1f7a1f;
+color:white;
+}
+
+footer{
+background:#145214;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
+#chatbot-button{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#1f7a1f;
+color:white;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:26px;
+cursor:pointer;
+}
+
+#chatbot{
+position:fixed;
+bottom:95px;
+right:20px;
+width:340px;
+background:white;
+border-radius:10px;
+display:none;
+flex-direction:column;
+box-shadow:0 8px 25px rgba(0,0,0,0.25);
+}
+
+#chat-header{
+background:#1f7a1f;
+color:white;
+padding:12px;
+text-align:center;
+font-weight:bold;
+}
+
+#chat-messages{
+height:260px;
+overflow-y:auto;
+padding:12px;
+font-size:14px;
+}
+
+#chat-input{
+padding:12px;
+border:none;
+border-top:1px solid #ddd;
+}
+
+.admin{
+background:#fff3cd;
+padding:20px;
+border-radius:10px;
+margin-top:20px;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:8px 0;
+}
+
+button{
+background:#1f7a1f;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:6px;
+cursor:pointer;
+}
+
+@media(min-width:700px){
+.features{grid-template-columns:repeat(3,1fr)}
+.product-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(min-width:1000px){
+.product-grid{grid-template-columns:repeat(4,1fr)}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>JEAGRITECH</h1>
+<p>Empowering Agriculture Through Technology</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#prices">Prices</a>
+<a href="#contact">Contact</a>
+<a href="#admin">Admin</a>
+</nav>
+
+<section id="home" class="hero">
+<h2>Smart Farming Starts Here</h2>
+<p>AI powered agriculture solutions for modern farmers.</p>
+</section>
+
+<section>
+<h2 style="text-align:center">Platform Features</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>AI Farming Assistant</h3>
+<p>Ask questions about crops, pests, soil and fertilizers.</p>
+</div>
+
+<div class="feature">
+<h3>Quality Agricultural Products</h3>
+<p>Seeds, fertilizers and equipment for farmers.</p>
+</div>
+
+<div class="feature">
+<h3>Modern Farming Knowledge</h3>
+<p>Helping farmers increase productivity with modern techniques.</p>
+</div>
+
+</div>
+</section>
+
+<section id="about">
+<h2>About JEAGRITECH</h2>
+<p>
+JEAGRITECH is an agricultural technology platform designed to help farmers
+access quality farm inputs, modern farming knowledge, and digital tools.
+Our goal is to improve food production and empower farmers through
+innovation and technology.
+</p>
+</section>
+
+<section id="products">
+<h2>Our Products</h2>
+
+<div class="product-grid">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1589927986089-35812388d1f4">
+<h3>Hybrid Maize Seeds</h3>
+<p>High yield maize seeds.</p>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc">
+<h3>Organic Fertilizer</h3>
+<p>Improves soil nutrients.</p>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1560493676-04071c5f467b">
+<h3>Rice Seeds</h3>
+<p>Premium rice farming seeds.</p>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1598514982901-cc7d9f7e8e47">
+<h3>Farm Sprayer</h3>
+<p>Durable spraying equipment.</p>
+</div>
+
+</div>
+</section>
+
+<section id="prices">
+<h2>Product Prices</h2>
+
+<table>
+<tr>
+<th>Product</th>
+<th>Price</th>
+</tr>
+
+<tr>
+<td>10kg Male Rabbit</td>
+<td>₦20,000</td>
+</tr>
+
+<tr>
+<td>10kg Female Rabbit</td>
+<td>₦18,000</td>
+</tr>
+
+<tr>
+<td>1kg Feed</td>
+<td>₦10,000</td>
+</tr>
+
+<tr>
+<td>6 weeks old Rabbit</td>
+<td>₦5,000</td>
+</tr>
+
+</table>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: jeagritech@gmail.com</p>
+<p>Location: Nigeria</p>
+</section>
+
+<section id="admin">
+<h2>Admin Panel</h2>
+
+<div class="admin">
+<input id="adminPass" type="password" placeholder="Admin Password">
+<button onclick="login()">Login</button>
+
+<div id="adminArea" style="display:none">
+<h3>Add New Product Price</h3>
+<input id="productName" placeholder="Product Name">
+<input id="productPrice" placeholder="Price in Naira">
+<button onclick="addPrice()">Save</button>
+
+<div id="priceList"></div>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 JEAGRITECH Agricultural Technology Platform</p>
+</footer>
+
+<div id="chatbot-button">🤖</div>
+
+<div id="chatbot">
+<div id="chat-header">JEAGRITECH AI Farming Assistant</div>
+<div id="chat-messages"></div>
+<input id="chat-input" placeholder="Ask about farming...">
+</div>
+
+<script>
+
+const button=document.getElementById("chatbot-button");
+const bot=document.getElementById("chatbot");
+const input=document.getElementById("chat-input");
+const messages=document.getElementById("chat-messages");
+
+button.onclick=()=>{
+bot.style.display=bot.style.display==="flex"?"none":"flex";
+bot.style.flexDirection="column";
+}
+
+function addMessage(sender,text){
+messages.innerHTML+=`<p><b>${sender}:</b> ${text}</p>`;
+messages.scrollTop=messages.scrollHeight;
+}
+
+function farmingAI(question){
+
+question=question.toLowerCase();
+
+if(question.includes("maize"))
+return "Maize grows best in well drained soil with good sunlight and regular rainfall.";
+
+if(question.includes("rice"))
+return "Rice grows well in water rich soil and requires consistent irrigation.";
+
+if(question.includes("fertilizer"))
+return "Apply fertilizer during early plant growth to improve yield.";
+
+if(question.includes("tomato"))
+return "Tomatoes need full sunlight, regular watering, and fertile soil.";
+
+if(question.includes("pest"))
+return "Use natural pesticides or crop rotation to control pests.";
+
+if(question.includes("rabbit"))
+return "Rabbit are of the most healthiest type of white meat on Earth.";
+
+if(question.includes("corn"))
+return "Corn is a natural vegetable that is economically profitable and good for the Body.";
+
+if(question.includes("beans"))
+return "Beans are proteinous substances that is good for Body Building and Repairing of Tissues.";
+
+if(question.includes("seeds"))
+return "Seeds are natural elements needed for the planting and growth of plants, vegetables, and fruits.";
+
+if(question.includes("yam"))
+return "Yams are Carbohydrates that are Energy Giving Foods that are good for the Body and they grow underground.";
+
+if(question.includes("cassava"))
+return "Cassava is a root crop used to make foods like garri and fufu.";
+
+if(question.includes("millet"))
+return "Millet is a small grain crop grown in dry areas for food.";
+
+if(question.includes("sorghum"))
+return "Sorghum is a cereal grain used for food, flour, and animal feed.";
+
+if(question.includes("wheat"))
+return "Wheat is a grain used to make flour for bread and pasta.";
+
+if(question.includes("barley"))
+return "Barley is a cereal grain used for food, drinks, and animal feed.";
+
+if(question.includes("groundnut"))
+return "Groundnut is a legume grown for its edible nuts and oil.";
+
+if(question.includes("peanut"))
+return "Peanut is a legume grown for its edible nuts and oil.";
+
+if(question.includes("soybean"))
+return "Soybean is a protein-rich bean used for food and animal feed.";
+
+if(question.includes("cowpea"))
+return "Cowpea is a bean crop commonly called black-eyed peas.";
+
+if(question.includes("okra"))
+return "Okra is a vegetable with green pods used in soups.";
+
+if(question.includes("pepper"))
+return "Pepper is a spicy vegetable used to add flavour to food.";
+
+return "Farming Tip: Good soil health, water management, and quality seeds improve crop yield.";
+
+}
+
+input.addEventListener("keypress",function(e){
+
+if(e.key==="Enter"){
+
+let user=input.value;
+if(user.trim()==="")return;
+
+addMessage("You",user);
+
+let reply=farmingAI(user);
+
+addMessage("AI",reply);
+
+input.value="";
+
+}
+
+});
+
+const password="JEAGRITECH1234";
+
+function login(){
+let pass=document.getElementById("adminPass").value;
+
+if(pass===password){
+alert("Login successful");
+document.getElementById("adminArea").style.display="block";
+}else{
+alert("Wrong password");
+}
+}
+
+function addPrice(){
+let name=document.getElementById("productName").value;
+let price=document.getElementById("productPrice").value;
+
+let list=document.getElementById("priceList");
+
+list.innerHTML+=`<p>${name} - ₦${price}</p>`;}
+
+</script>
+
+</body>
+</html>
